@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
-import { MatToolbarModule } from "@angular/material";
+import { MatToolbarModule, MatCardModule, MatTableModule, MatSnackBarModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatSelectModule, MatDividerModule, MatIconModule, MatButtonModule } from "@angular/material";
 import { HttpClientModule} from "@angular/common/http";
 
 import { AppComponent } from './app.component';
@@ -30,8 +30,17 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),
+    HttpClientModule,
     MatToolbarModule,
-    HttpClientModule
+    MatCardModule,
+    MatTableModule,
+    MatSnackBarModule,
+    MatFormFieldModule,MatInputModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatDividerModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [IssueService],
   bootstrap: [AppComponent]
