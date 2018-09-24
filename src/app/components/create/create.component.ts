@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IssueService } from "../../issue.service";
 
 @Component({
   selector: 'app-create',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateComponent implements OnInit {
 
-  constructor() { }
+  /**
+   * Adding an Instance of the IssueService
+   * @param issueService
+   */
+  constructor(private issueService: IssueService) { }
 
   ngOnInit() {
   }
