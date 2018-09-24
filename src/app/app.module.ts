@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
 import { MatToolbarModule, MatCardModule, MatTableModule, MatSnackBarModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatSelectModule, MatDividerModule, MatIconModule, MatButtonModule } from "@angular/material";
 import { HttpClientModule} from "@angular/common/http";
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -31,6 +32,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
+    ReactiveFormsModule,
     MatToolbarModule,
     MatCardModule,
     MatTableModule,
