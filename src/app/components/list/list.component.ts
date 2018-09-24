@@ -13,7 +13,7 @@ import { IssueService } from "../../issue.service";
 export class ListComponent implements OnInit {
 
   issues: Issue[];
-  displayColumns = ['title', 'responsible', 'severity', 'status', 'actions'];
+  displayedColumns = ['title', 'responsible', 'severity', 'status', 'actions'];
 
   /**
    * Adding an Instance of the IssueService
